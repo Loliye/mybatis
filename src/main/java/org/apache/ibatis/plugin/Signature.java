@@ -23,16 +23,18 @@ import java.lang.annotation.Target;
 /**
  * @author Clinton Begin
  */
+
 /**
  * 签名
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
-public @interface Signature {
-  //就是定义哪些类，方法，参数需要被拦截
-  Class<?> type();
+public @interface Signature
+{
+    //就是定义哪些类，方法，参数需要被拦截
+    Class<?> type();
 
-  String method();
+    String method();
 
-  Class<?>[] args();
+    Class<?>[] args();
 }

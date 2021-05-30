@@ -23,12 +23,14 @@ import java.lang.annotation.Target;
 /**
  * @author Clinton Begin
  */
+
 /**
  * 拦截
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
-public @interface Intercepts {
-  Signature[] value();
+public @interface Intercepts
+{
+    Signature[] value();
 }
 

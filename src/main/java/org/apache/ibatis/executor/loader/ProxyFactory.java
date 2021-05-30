@@ -24,13 +24,15 @@ import org.apache.ibatis.session.Configuration;
 /**
  * @author Eduardo Macarron
  */
+
 /**
  * 延迟加载代理工厂
  */
-public interface ProxyFactory {
+public interface ProxyFactory
+{
 
-  void setProperties(Properties properties);
+    void setProperties(Properties properties);
 
-  Object createProxy(Object target, ResultLoaderMap lazyLoader, Configuration configuration, ObjectFactory objectFactory, List<Class<?>> constructorArgTypes, List<Object> constructorArgs);
-  
+    Object createProxy(Object target, ResultLoaderMap lazyLoader, Configuration configuration, ObjectFactory objectFactory, List<Class<?>> constructorArgTypes, List<Object> constructorArgs);
+
 }

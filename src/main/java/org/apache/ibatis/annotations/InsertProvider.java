@@ -25,8 +25,9 @@ import java.lang.annotation.Target;
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
-public @interface InsertProvider {
-  Class<?> type();
+public @interface InsertProvider
+{
+    Class<?> type();
 
-  String method();
+    String method();
 }

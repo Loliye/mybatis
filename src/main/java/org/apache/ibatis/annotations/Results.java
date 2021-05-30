@@ -25,6 +25,7 @@ import java.lang.annotation.Target;
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
-public @interface Results {
-  Result[] value() default {};
+public @interface Results
+{
+    Result[] value() default {};
 }

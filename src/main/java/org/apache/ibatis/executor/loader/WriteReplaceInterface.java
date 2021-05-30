@@ -20,8 +20,9 @@ import java.io.ObjectStreamException;
 /**
  * @author Eduardo Macarron
  */
-public interface WriteReplaceInterface {
+public interface WriteReplaceInterface
+{
 
-  Object writeReplace() throws ObjectStreamException;
+    Object writeReplace() throws ObjectStreamException;
 
 }
